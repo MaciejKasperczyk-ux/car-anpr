@@ -1,7 +1,7 @@
 .venv311/
 .venv/
 venv/
-
+photos/
 runs/
 __pycache__/
 *.pt
