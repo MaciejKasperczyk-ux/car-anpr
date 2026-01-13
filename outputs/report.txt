@@ -1,5 +1,0 @@
-Val images: 58
-OCR accuracy (%): 44.83
-Mean IoU: 0.9001
-Time for 58 images (s): 43.46
-Final grade: 2.0
