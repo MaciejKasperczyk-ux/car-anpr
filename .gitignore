@@ -1,6 +1,9 @@
 .venv311/
 .venv/
 venv/
+dataset_yolo/
+outputs/
+
 photos/
 runs/
 __pycache__/
