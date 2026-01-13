@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+numpy
+lxml
+tqdm
+pyyaml
+paddlepaddle
+paddleocr
+

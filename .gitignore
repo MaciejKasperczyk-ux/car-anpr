@@ -1,0 +1,11 @@
+.venv311/
+.venv/
+venv/
+
+runs/
+__pycache__/
+*.pt
+*.onnx
+*.zip
+.env
+.DS_Store
