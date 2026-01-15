@@ -1,14 +1,23 @@
-.venv311/
-.venv/
-venv/
-dataset_yolo/
-outputs/
+# AML / notebooks
+.ipynb_aml_checkpoints/
+.amlignore.amltmp
+*.amltmp
 
-photos/
-runs/
+# Python
 __pycache__/
-*.pt
-*.onnx
-*.zip
+*.pyc
+.venv*/
 .env
-.DS_Store
+
+# Datasets / artifacts
+photos/
+dataset_yolo/
+runs/
+
+# Docker
+*.tar
+
+# Frontend
+node_modules/
+dist/
+build/

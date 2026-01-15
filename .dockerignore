@@ -1,0 +1,8 @@
+**
+.git
+.azureml
+.ipynb_checkpoints
+__pycache__
+*.amltmp
+*.pyc
+.env

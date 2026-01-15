@@ -1,5 +1,12 @@
 import os
+import sys
 import torch
+
+os.environ["ULTRALYTICS_DISABLE_MLFLOW"] = "1"
+os.environ["MLFLOW_TRACKING_URI"] = ""
+
+sys.modules["mlflow"] = None
+
 from ultralytics import YOLO
 
 DATA_YAML = os.path.join("dataset_yolo", "data.yaml")
@@ -10,10 +17,8 @@ EPOCHS = 60
 BATCH = 8
 WORKERS = 2
 
-
 def pick_device() -> str:
     return "0" if torch.cuda.is_available() else "cpu"
-
 
 def main() -> None:
     if not os.path.isfile(DATA_YAML):
@@ -37,8 +42,6 @@ def main() -> None:
     )
 
     print("Training finished.")
-    print("Check weights in runs/detect/plate_detector/weights/best.pt")
-
 
 if __name__ == "__main__":
     main()
